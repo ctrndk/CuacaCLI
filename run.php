@@ -16,7 +16,7 @@ $kid = $kota = $json['id'];
 $celcius = $temp;
 $aw=$celcius-273.15;
 echo "\nKOTA : ".$q." => KOTA ID: ".$kid;
-print_r("\n       SEGINI : => ".$aw."° Celcius");
+print_r("\n       SEGINI : => ".$aw."° Celcius\n\n");
 return $aw;
 }
 
