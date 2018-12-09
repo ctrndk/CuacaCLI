@@ -1,6 +1,5 @@
 <?php
 
-
 function cuaca($q){
 $url = 'https://api.openweathermap.org/data/2.5/weather?q='.$q.'&APPID=7d8d01d4bfa29829d6bda8459d1e8a64';
 $ch = curl_init();
@@ -20,8 +19,15 @@ print_r("\n       SEGINI : => ".$aw."° Celcius\n\n");
 return $aw;
 }
 
-
-echo "===============================================\n";
+echo "\033[32m
+  _____ _  _ ______      _____  _____             
+ / ____| || |____  |___ |  __ \|  __ \            
+| |    | || |_  / / __ \| |  | | |  | | _____   __
+| |    |__   _|/ / / _` | |  | | |  | |/ _ \ \ / /
+| |____   | | / / | (_| | |__| | |__| |  __/\ V / 
+ \_____|  |_|/_/ \ \__,_|_____/|_____/ \___| \_/  
+                  \____/                          \n";
+echo "\033[1;36m===============================================\n";
 echo "      Prakiraan Cuaca [openweathermap.org]     \n";
 echo "      Coded by @ctrndk (github.com/ctrndk)     \n";
 echo "===============================================\n";
